@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24fee195-7dd9-4e54-ba7d-185f3fb44137" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/task1/Simple.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/task1/Simple.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/lesson1/task1/Tests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/lesson1/task1/Tests.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Zr5bo8XnsKz7ckpglZ0FYE69iq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.XML" />
+  </component>
+  <component name="RunManager" selected="JUnit.Tests.sqrDouble">
+    <configuration name="Tests.seconds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinAsFirst-Coursera-v2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson1.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson1.task1" />
+      <option name="MAIN_CLASS_NAME" value="lesson1.task1.Tests" />
+      <option name="METHOD_NAME" value="seconds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.sqrDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinAsFirst-Coursera-v2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson1.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson1.task1" />
+      <option name="MAIN_CLASS_NAME" value="lesson1.task1.Tests" />
+      <option name="METHOD_NAME" value="sqrDouble" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.trackLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinAsFirst-Coursera-v2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson1.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson1.task1" />
+      <option name="MAIN_CLASS_NAME" value="lesson1.task1.Tests" />
+      <option name="METHOD_NAME" value="trackLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.travelMinutes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinAsFirst-Coursera-v2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson1.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson1.task1" />
+      <option name="MAIN_CLASS_NAME" value="lesson1.task1.Tests" />
+      <option name="METHOD_NAME" value="travelMinutes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="KotlinAsFirst-Coursera-v2019" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lesson1.task1.SimpleKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Tests.sqrDouble" />
+        <item itemvalue="JUnit.Tests.trackLength" />
+        <item itemvalue="JUnit.Tests.seconds" />
+        <item itemvalue="Kotlin.SimpleKt" />
+        <item itemvalue="JUnit.Tests.travelMinutes" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24fee195-7dd9-4e54-ba7d-185f3fb44137" name="Default Changelist" comment="" />
+      <created>1585475753344</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585475753344</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="87" key="#Kotlin" timestamp="1585990918351">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="87" key="#Kotlin/0.0.1600.860@0.0.1600.860" timestamp="1585990918351" />
+    <state x="254" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585904690717">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1585904690717" />
+    <state x="92" y="92" width="1416" height="676" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585848043734">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="92" y="92" width="1416" height="676" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1600.860@0.0.1600.860" timestamp="1585848043734" />
+    <state x="480" y="157" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585809077459">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="480" y="157" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1585809077459" />
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1585809168905">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1585809168905" />
+    <state width="1556" height="218" key="GridCell.Tab.0.bottom" timestamp="1585903417316">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585903417316" />
+    <state width="1556" height="218" key="GridCell.Tab.0.center" timestamp="1585903417316">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="218" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1585903417316" />
+    <state width="1556" height="218" key="GridCell.Tab.0.left" timestamp="1585903417315">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="218" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1585903417315" />
+    <state width="1556" height="218" key="GridCell.Tab.0.right" timestamp="1585903417316">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="218" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1585903417316" />
+    <state x="280" y="3" key="SettingsEditor" timestamp="1585584694129">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="3" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1585584694129" />
+    <state x="495" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1585904142034">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="495" y="252" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585904142034" />
+    <state x="523" y="71" key="refactoring.ChangeSignatureDialog" timestamp="1585904729285">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="523" y="71" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1585904729285" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585809158603">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1585809158603" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/test/lesson1/task1/Tests.kt</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/lesson1/task1/Simple.kt</url>
+          <line>23</line>
+          <properties method="sqr">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
