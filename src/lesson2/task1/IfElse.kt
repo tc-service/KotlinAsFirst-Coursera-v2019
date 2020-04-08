@@ -76,7 +76,19 @@ fun timeForHalfWay(
     t1: Double, v1: Double,
     t2: Double, v2: Double,
     t3: Double, v3: Double
-): Double = TODO()
+): Double {
+    var s1 = t1 * v1    // 1-й отрезок
+    var s2 = t2 * v2    // 2-й
+    var s3 = t3 * v3    //3-й
+    var hW = (s1 + s2 + s3) /2
+    if (s1 > hW) {
+        return (hW / v1)
+        }
+        if ( (s1 +s2) > hW ) {
+            return (t1 + (hW - s1) / v2)
+        }
+        return (t1 + t2 + (hW - s1 - s2)/v3)
+}//= TODO()
 
 /**
  * Простая
@@ -91,7 +103,24 @@ fun whichRookThreatens(
     kingX: Int, kingY: Int,
     rookX1: Int, rookY1: Int,
     rookX2: Int, rookY2: Int
-): Int = TODO()
+): Int {
+    if (kingX == rookX1) {
+        if (kingX == rookX2) {return 3}
+            //if (kingY == rookY1)  {return 3}
+                if (kingY == rookY2) {return 3}
+                return 1
+    }
+        if (kingX == rookX2)
+        {if (kingY == rookY1) return 3
+             return 2}
+        if (kingY == rookY1)
+        {if (kingY == rookY2) return 3
+                         return 1}
+            if (kingY == rookY2) return 2
+            return 0
+}
+
+        //= TODO()
 
 /**
  * Простая
