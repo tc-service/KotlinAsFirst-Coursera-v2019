@@ -3,10 +3,16 @@
 package lesson2.task2
 
 import lesson1.task1.sqr
+import lesson2.task1.whichRookThreatens
+
+fun main(args: Array<String>) {
+    val result = brickPasses(2, 10, 5, 6, 3)
+    println("Result: $result")
+}
 
 /**
  * Пример
- *
+ *brickPasses(2, 10, 5, 6, 3)
  * Лежит ли точка (x, y) внутри окружности с центром в (x0, y0) и радиусом r?
  */
 fun pointInsideCircle(x: Double, y: Double, x0: Double, y0: Double, r: Double) =
