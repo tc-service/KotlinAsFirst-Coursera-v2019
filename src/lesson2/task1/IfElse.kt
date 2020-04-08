@@ -3,9 +3,14 @@
 package lesson2.task1
 
 import lesson1.task1.discriminant
+import lesson1.task1.travelMinutes
 import kotlin.math.max
 import kotlin.math.sqrt
 
+fun main(args: Array<String>) {
+    val result = whichRookThreatens(1, 2, 3, 4, 5, 6)
+    println("Result: $result")
+}
 /**
  * Пример
  *
