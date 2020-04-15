@@ -2,6 +2,7 @@
 
 package lesson3.task1
 
+import java.text.BreakIterator
 import kotlin.math.sqrt
 
 /**
@@ -67,7 +68,15 @@ fun digitCountInNumber(n: Int, m: Int): Int =
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
-fun digitNumber(n: Int): Int = TODO()
+fun digitNumber(n: Int): Int {
+    var i: Int = 1
+    var b: Int = n
+         while (b / 10 != 0) {
+             b = b/10
+             i++
+    }
+    return i
+}
 
 /**
  * Простая
@@ -83,7 +92,30 @@ fun fib(n: Int): Int = TODO()
  * Для заданных чисел m и n найти наименьшее общее кратное, то есть,
  * минимальное число k, которое делится и на m и на n без остатка
  */
-fun lcm(m: Int, n: Int): Int = TODO()
+fun lcm(m: Int, n: Int): Int {
+    var k : Int
+    var b : Int = 1
+    if (m > n) {
+        k = m
+        while (k % n != 0) {
+            b++
+            k = m * b
+        }
+
+        return k
+        }
+        if (m < n) {
+            k = n
+            while (k % m != 0) {
+                b++
+                k = n * b
+            }
+            return k
+        }
+    return m
+}
+
+
 
 /**
  * Простая
@@ -185,7 +217,21 @@ fun isPalindrome(n: Int): Boolean = TODO()
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
-fun hasDifferentDigits(n: Int): Boolean = TODO()
+fun hasDifferentDigits(n: Int): Boolean {
+    //var a : Boolean
+    val b = (n % 10) * 10 // самая последняя цифра числа
+    var lastDij = (n % 10) * 10 //последняя цифра в цикле
+    var ost = n // 10
+    while (ost != 0){
+            if (lastDij != b){
+                return true
+                    break
+                    }
+        ost /= 10
+        lastDij = (ost % 10) * 10
+    }
+    return false
+}
 
 /**
  * Сложная
