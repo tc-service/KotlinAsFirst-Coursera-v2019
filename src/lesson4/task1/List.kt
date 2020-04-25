@@ -122,7 +122,13 @@ fun abs(v: List<Double>): Double = TODO()
  *
  * Рассчитать среднее арифметическое элементов списка list. Вернуть 0.0, если список пуст
  */
-fun mean(list: List<Double>): Double = TODO()
+fun mean(list: List<Double>): Double {
+    if (list.isNotEmpty()) {
+        return (list.sum() / list.size)
+    }
+    return (0.0)
+}
+//= TODO()
 
 /**
  * Средняя
@@ -132,7 +138,14 @@ fun mean(list: List<Double>): Double = TODO()
  *
  * Обратите внимание, что данная функция должна изменять содержание списка list, а не его копии.
  */
-fun center(list: MutableList<Double>): MutableList<Double> = TODO()
+fun center(list: MutableList<Double>): MutableList<Double> {
+    var mid = list.sum() / list.size
+    for (element in list)
+        if (list.isNotEmpty()) {
+            return list.map { it - mid }.toMutableList()
+        }
+    return (list)
+}
 
 /**
  * Средняя
@@ -163,7 +176,19 @@ fun polynom(p: List<Int>, x: Int): Int = TODO()
  *
  * Обратите внимание, что данная функция должна изменять содержание списка list, а не его копии.
  */
-fun accumulate(list: MutableList<Int>): MutableList<Int> = TODO()
+fun accumulate(list: MutableList<Int>): MutableList<Int> {
+    val result = mutableListOf<Int>()
+    var sum: Int = 0
+    if (list.isNotEmpty()) {
+        sum = list[0]
+        for (i in 1 until list.size) {
+            val element = list[i] + sum
+            sum += list[i]
+            list[i] = element
+        }
+    }
+    return (list)
+}
 
 /**
  * Средняя
@@ -236,7 +261,42 @@ fun decimalFromString(str: String, base: Int): Int = TODO()
  * 90 = XC, 100 = C, 400 = CD, 500 = D, 900 = CM, 1000 = M.
  * Например: 23 = XXIII, 44 = XLIV, 100 = C
  */
-fun roman(n: Int): String = TODO()
+fun roman(n: Int): String {
+    val digit1 = mutableListOf("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX")
+    val digit10 = mutableListOf("X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
+    val digit100 = mutableListOf("C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
+    val digit1000 = mutableListOf("M", "MM", "MMM")
+    val ch = n.toString().chunked(1)
+   // val b = ch.toMutableList()
+    val a = ch.size
+    //var i = 0
+    val result = mutableListOf<String>()
+    //for ((index, element) in ch.withIndex()) {
+        //for (iten in b) {
+        //val k = iten.toInt()
+    ch.forEachIndexed { index, element ->
+        val i = element.toInt()
+        when (a - index) {
+            4 -> if (i != 0) {
+                result.add(digit1000[i - 1])   // тысячи
+            }
+
+            3 -> if (i != 0) {
+            result.add(digit100[i-1])   //сотни
+            }
+
+            2 -> if (i != 0) {
+                result.add(digit10[i - 1])   //десятки
+            }
+            1 -> if (i != 0) {
+                result.add(digit1[i - 1])   //единицы
+            }
+        }
+    }
+    return result.joinToString (separator = "") //i++ //return result.toString()
+    }
+
+
 
 /**
  * Очень сложная
@@ -245,4 +305,71 @@ fun roman(n: Int): String = TODO()
  * Например, 375 = "триста семьдесят пять",
  * 23964 = "двадцать три тысячи девятьсот шестьдесят четыре"
  */
-fun russian(n: Int): String = TODO()
+fun main(args: Array<String>) {
+    val result = roman(3020)
+    println(result)
+}
+
+fun russian(n: Int): String {
+    var d: Int
+    val res = mutableListOf<String>()
+    val ch: String = n.toString()  // определяем разрядность числа n
+    val b = ch.toList()   // переводим разрядность в формат List
+    var a = b.size // длина строки
+    val dig1 = listOf("один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять")
+    val dig20 = listOf(
+        "одиннадцать",
+        "двенадцать",
+        "тринадцать",
+        "четырнадцать",
+        "пятьнадцать",
+        "шестьнадцать",
+        "семьнадцать",
+        "восемьнадцать",
+        "девятьнадцать"
+    )
+    val digDec = listOf(
+        "десять",
+        "двадцать",
+        "тридцать",
+        "сорок",
+        "пятьдесят",
+        "шестьдесят",
+        "семьдесят",
+        "восемьдесят",
+        "девяносто"
+    )
+    val digHandr =
+        listOf("сто", "двсти", "триста", "четыреста", "пятьсот", "шестьсот", "семьсот", "восемьсот", "девятьсот")
+    val dig1Thaus = listOf("одна тысяча", "две тысячи", "три тысячи", "четыре тысячи")
+    val dig234Thaus = listOf("тысячи")
+    val digThaus = listOf("тысяч")
+
+    for (element in b) {
+        if (n > 5)
+            if (b[0].toInt() != 0) {
+                res.add(digHandr[b[0].toInt() - 1])     // сто
+                if (b[1].toInt() >= 2) {
+                    res.add(digDec[b[1].toInt() - 1])       // да, то двадцать
+                    if (b[2].toInt() < 5) {
+                        res.add(dig1Thaus[b[2].toInt() - 1])    // да, три тысячи
+                    } else res.add(dig1[b[2].toInt() - 1])    // нет, то пять
+                    res.add(digThaus[0])                    // тысяч
+                } else
+                    if (b[2].toInt() != 0) {                 // от 11 до 20
+                        res.add(dig20[b[2].toInt() - 1])       //
+                        res.add(digThaus[0])                    // тысяч
+                    }
+
+                res.add(digDec[0])
+
+
+            }
+    }
+    if (b[3].toInt() != 0) {
+        res.add(dig20[b[2].toInt() - 1])
+        return res.toString()
+    }
+    return res.toString()
+
+}
